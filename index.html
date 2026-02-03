@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SunriseMultiVentures</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>SunriseMultiVentures 🌅</h1>
+  <p>Quality food products delivered with care</p>
+
+  <div class="products">
+
+    <div class="card">
+      <img src="garri.jpg" alt="Garri">
+      <h2>Garri</h2>
+      <p>₦3,000</p>
+      <button onclick="order('Garri','3000')">Order</button>
+    </div>
+
+    <div class="card">
+      <img src="yam.jpg" alt="Yam">
+      <h2>Yam</h2>
+      <p>₦2,500</p>
+      <button onclick="order('Yam','2500')">Order</button>
+    </div>
+
+    <div class="card">
+      <img src="beans.jpg" alt="Beans">
+      <h2>Beans</h2>
+      <p>₦4,000</p>
+      <button onclick="order('Beans','4000')">Order</button>
+    </div>
+
+    <div class="card">
+      <img src="elubo.jpg" alt="Elubo">
+      <h2>Elubo</h2>
+      <p>₦3,500</p>
+      <button onclick="order('Elubo','3500')">Order</button>
+    </div>
+
+  </div>
+
+  <!-- Order Form -->
+  <div id="orderBox" class="hidden">
+    <h3 id="orderText"></h3>
+    <input type="tel" id="phone" placeholder="Enter phone number">
+    <button onclick="sendOrder()">Send Order</button>
+  </div>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
